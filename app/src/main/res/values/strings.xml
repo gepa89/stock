@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Control</string>
+    <string name="msg_incorrect_pass">Credenciales incorrectas</string>
+    <string name="msg_user_does_not_exist">Usuario no registrado</string>
+    <string name="menu_settings">Configuración</string>
+    <string name="barcode">Barcode</string>
+    <string name="btnAutomaticBarcode">Ingresar datos</string>
+    <string name="btnClientBarcode">Client Control</string>
+    <string name="btnScannerSelectBarcode">Scanner Selection Example</string>
+    <string name="btnSwitchScanners">Switch Scanners</string>
+    <string name="txtBarcodeTitle">.:Presiona el botón del dispositivo para scanear el código de barras:.</string>
+    <string name="txtMaterialTitle">Favor scanear el Material.</string>
+    <string name="txtMainTitle">Seleccione una opción.</string>
+    <string name="txtInsertData">Ingresar número de Inventario</string>
+    <string name="txtInsertOCData">Ingresar número de OC</string>
+    <string name="txtInputData">Favor completar los datos</string>
+    <string name="txtPreamble">Preamble</string>
+    <string name="editPreamble"></string>
+    <string name="editPostamble"></string>
+    <string name="txtPostamble">Postamble</string>
+    <string name="action_settings">Cerrar Sesión</string>
+    <string name="action_logout">Cerrar Sesión</string>
+</resources>

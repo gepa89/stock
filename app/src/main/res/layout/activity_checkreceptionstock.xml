@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar3">
+
+        <TextView
+            android:id="@+id/stockHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#7390cd"
+            android:gravity="left"
+            android:padding="6dp"
+            android:text="Registro de recepción "
+            android:textColor="#FFFFFF"
+            android:textSize="13sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/txtBarcodeTitle"
+            android:textAlignment="center"
+            android:textColor="#7390cd"
+            android:textColorLink="#7390cd"
+            android:textSize="10sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/lytOpenP"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="Abrir Pallet"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:text="PALLET"
+                    android:textAlignment="viewEnd" />
+
+                <EditText
+                    android:id="@+id/etNroPallet"
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="444dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tituloStock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="ID" />
+
+            <TextView
+                android:id="@+id/tvCounterOC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp" />
+
+            <TextView
+                android:id="@+id/tvMaterial"
+                android:layout_width="match_parent"
+                android:layout_height="116dp"
+                android:padding="6dp" />
+
+            <LinearLayout
+                android:id="@+id/lytClosing"
+                android:layout_width="match_parent"
+                android:layout_height="204dp"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <EditText
+                    android:id="@+id/etCant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:hint="Cantidad"
+                    android:inputType="number" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnCerrarPallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cerrar Pallet" />
+
+                    <Button
+                        android:id="@+id/btnCerrarOC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cerrar Control" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

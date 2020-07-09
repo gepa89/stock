@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/stockHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#7390cd"
+        android:gravity="left"
+        android:padding="6dp"
+        android:text="@string/txtBarcodeTitle"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="183dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stockHeader">
+
+        <TextView
+            android:id="@+id/pedidoHeader"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center" />
+
+        <ListView
+            android:id="@+id/listViewPedidoData"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@+id/stockHeader"></ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lytMaterias"
+        android:layout_width="match_parent"
+        android:layout_height="337dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/fragmentCheckTitle"
+            android:layout_width="384dp"
+            android:layout_height="32dp"
+            android:background="#5C8A8A"
+            android:gravity="left"
+            android:padding="6dp"
+            android:text="@string/txtMaterialTitle"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/lblMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/lblMaterial_in"
+                android:layout_width="332dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:text="Cantidad"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/inputCant"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="0"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnFinalizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Finalizar" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lytNuevoPedido"
+        android:layout_width="match_parent"
+        android:layout_height="337dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/btn_nuevo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Nuevo Pedido" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
